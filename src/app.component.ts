@@ -1,5 +1,5 @@
 // app.component.ts
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,16 @@ import { Component } from '@angular/core';
     </a>
   `,
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   name = 'Standalone Angular';
+
+  ngOnInit(): void {
+    
+  }
 }
+
+const userRoles = new Map<string, string>([
+  ['admin', 'Administrator'],
+  ['user', 'Regular User'],
+  ['guest', 'Guest Access'],
+]);
