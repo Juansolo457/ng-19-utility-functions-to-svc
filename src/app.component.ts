@@ -7,7 +7,7 @@ import { NgFor } from '@angular/common';
 @Component({
   selector: 'app-root',
   imports: [CommonModule, NgFor],
-  standalone: true, // <-- Important for standalone components
+  standalone: true,
   template: `
     <h1>Hello from {{ name }}!</h1>
     <a target="_blank" href="https://angular.dev/overview">
