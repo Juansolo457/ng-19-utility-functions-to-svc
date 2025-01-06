@@ -1,4 +1,4 @@
-export const mapDictionaryToSelectOptions = <Value extends string | number | symbol>(
+const mapDictionaryToSelectOptions = <Value extends string | number | symbol>(
     dictionary: Map<Value, string>,
   ): { value: Value; label: string }[] => {
     return Array.from(dictionary, ([value, label]) => ({
