@@ -21,7 +21,7 @@ import { CommonModule } from '@angular/common';
   `,
 })
 export class AppComponent implements OnInit {
-  name = 'Nicholas C.';
+  name = 'Ashlynne';
   roles: any;
 
   ngOnInit(): void {
