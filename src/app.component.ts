@@ -2,11 +2,10 @@
 import { Component, OnInit } from '@angular/core';
 import { mapDictionaryToSelectOptions } from './map-util';
 import { CommonModule } from '@angular/common';
-import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, NgFor],
+  imports: [CommonModule, ],
   standalone: true,
   template: `
     <h1>Hello from {{ name }}!</h1>
@@ -23,11 +22,11 @@ import { NgFor } from '@angular/common';
 })
 export class AppComponent implements OnInit {
   name = 'Standalone Angular';
-  blah: any;
+  roles: any;
 
   ngOnInit(): void {
-   this.blah = mapDictionaryToSelectOptions(userRoles); 
-   console.log('this', this.blah);
+   this.roles = mapDictionaryToSelectOptions(userRoles); 
+   console.log(this.roles);
    
   }
 }
