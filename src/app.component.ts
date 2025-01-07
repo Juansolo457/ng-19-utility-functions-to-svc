@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, ],
+  imports: [CommonModule],
   standalone: true,
   template: `
     <h1>Hello from {{ name }}!</h1>
@@ -21,7 +21,7 @@ import { CommonModule } from '@angular/common';
   `,
 })
 export class AppComponent implements OnInit {
-  name = 'Standalone Angular';
+  name = 'Nicholas C.';
   roles: any;
 
   ngOnInit(): void {
